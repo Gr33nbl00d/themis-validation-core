@@ -1,0 +1,24 @@
+{
+  "name": "themis-validation-core",
+  "version": "1.0.0",
+  "description": "Themis Validation Engine Core",
+  "author": "Gr33nbl00d",
+  "main": "dist/lib/src/index.js",
+  "module": "dist/lib/src/index.js",
+  "typings": "dist/types/src/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc --module commonjs",
+    "test": "ts-node ./test/runner.ts",
+    "generate-barrels": "barrelsby --delete -d ./src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "alsatian": "^3.0.1",
+    "barrelsby": "^2.1.1",
+    "rimraf": "^3.0.0",
+    "tap-bark": "^2.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
