@@ -1,11 +1,22 @@
 {
   "name": "themis-validation-core",
-  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "validation"
+  ],
+  "version": "0.9.0",
   "description": "Themis Validation Engine Core",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
   "module": "dist/lib/src/index.js",
   "typings": "dist/types/src/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/Gr33nbl00d/themis-validation-core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr33nbl00d/themis-validation-core.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc --module commonjs",
