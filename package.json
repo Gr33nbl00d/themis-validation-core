@@ -4,7 +4,7 @@
   "keywords": [
     "validation"
   ],
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Themis Validation Engine Core",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
