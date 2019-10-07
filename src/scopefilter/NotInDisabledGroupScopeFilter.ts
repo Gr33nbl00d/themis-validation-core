@@ -1,7 +1,7 @@
 import {ValidationScopeFilter} from "./ValidationScopeFilter";
 import {ObjectValidationConfig} from "..";
 
-export default class NotInDisabledGroupFilter implements ValidationScopeFilter {
+export class NotInDisabledGroupScopeFilter implements ValidationScopeFilter {
     disabledGroups: Array<string>;
 
 

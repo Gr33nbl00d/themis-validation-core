@@ -2,7 +2,7 @@ import {ValidationScopeFilter} from "./ValidationScopeFilter";
 import {ObjectValidationConfig} from "../";
 
 
-export class MatchEverythingFilter implements ValidationScopeFilter {
+export class MatchEverythingScopeFilter implements ValidationScopeFilter {
     getValidationEntries(validations: ObjectValidationConfig): ObjectValidationConfig {
         return validations;
     }

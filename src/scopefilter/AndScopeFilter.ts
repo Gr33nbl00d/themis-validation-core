@@ -1,7 +1,7 @@
 import {ValidationScopeFilter} from "./ValidationScopeFilter";
 import {ObjectValidationConfig} from "..";
 
-export default class AndFilter implements ValidationScopeFilter {
+export class AndScopeFilter implements ValidationScopeFilter {
     filter1: ValidationScopeFilter;
     filter2: ValidationScopeFilter;
 
