@@ -19,7 +19,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc --module commonjs",
+    "build": "tsc",
     "test": "ts-node ./test/runner.ts",
     "generate-barrels": "barrelsby --delete -d ./src"
   },
