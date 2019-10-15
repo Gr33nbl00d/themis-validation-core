@@ -4,7 +4,7 @@
   "keywords": [
     "validation"
   ],
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Themis Validation Engine Core",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
@@ -19,17 +19,30 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc --module commonjs",
+    "build": "tsc --module commonjs && cross-env NODE_ENV=production webpack --progress --hide-modules --mode production --config webpack-production.config.js",
     "test": "ts-node ./test/runner.ts",
     "generate-barrels": "barrelsby --delete -d ./src"
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "alsatian": "^3.0.1",
     "barrelsby": "^2.1.1",
     "rimraf": "^3.0.0",
     "tap-bark": "^2.1.0",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "ts-loader": "^6.2.0"
   }
 }
