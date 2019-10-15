@@ -1,7 +1,6 @@
 import {Validator} from "./Validator";
 import {ValueRetriever} from "../valueretriever/ValueRetriever";
-import {ValidatorError} from "./ValidationError";
-import {ValidationRuleFilter} from "../";
+import {ValidationRuleFilter, ValidatorError} from "../";
 
 export class ValidationEntry {
     metadata: any;

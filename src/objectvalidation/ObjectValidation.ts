@@ -1,7 +1,7 @@
 import {ObjectValidationConfig} from "./ObjectValidationConfig";
 import {ValidationScopeFilter} from "../scopefilter/ValidationScopeFilter";
 import {ValueRetriever} from "../valueretriever/ValueRetriever";
-import {ValidatorError} from "./ValidationError";
+import {ValidatorError} from "./ValidatorError";
 
 export class ObjectValidation {
     protected objectValidationConfig: ObjectValidationConfig;

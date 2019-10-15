@@ -2,9 +2,8 @@ import {ValidationEntry} from "./ValidationEntry";
 import {ValidationScopeFilter} from "../scopefilter/ValidationScopeFilter";
 import {ValueRetriever} from "../valueretriever/ValueRetriever";
 import {Validator} from "./Validator";
-import {ValidatorError} from "./ValidationError";
 import {ValidationRuleFilter} from "./ValidationRuleFilter";
-import {MatchEverythingScopeFilter} from "..";
+import {MatchEverythingScopeFilter, ValidatorError} from "..";
 
 
 export class ObjectValidationConfig {

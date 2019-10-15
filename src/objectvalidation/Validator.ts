@@ -1,6 +1,6 @@
 import {ValidationRule} from "./ValidationRule";
-import {ValidationRuleError} from "./ValidationError";
 import {ValidationRuleFilter} from "./ValidationRuleFilter";
+import {ValidationRuleError} from "./ValidationRuleError";
 
 export class Validator {
     private i18nextNamespace: string;
